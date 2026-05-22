@@ -1,0 +1,17 @@
+[package]
+name = "presence-proof"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+# This tells Cargo to build a dynamic C-style library (.wasm) for Soroban
+# and a standard Rust library (.rlib) for local testing.
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+# The core Soroban SDK
+soroban-sdk = "25.0.0" 
+
+[dev-dependencies]
+# The SDK with testing utilities enabled, only used when you run `cargo test`
+soroban-sdk = { version = "25.0.0", features = ["testutils"] }
