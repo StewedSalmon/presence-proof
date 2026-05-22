@@ -1,22 +1,33 @@
-# Soroban Project
+# PresenceProof
 
-## Project Structure
+## Problem
+Instructors and students suffer from easily forged paper sign-in sheets, lost LMS data, and end-of-semester disputes over required participation grades.
 
-This repository uses the recommended structure for a Soroban project:
+## Solution
+PresenceProof uses a Stellar smart contract to permanently log cryptographically verifiable, time-stamped attendance records that cannot be retroactively altered by either the student or the system administrator.
 
-```text
-.
-├── contracts
-│   └── hello_world
-│       ├── src
-│       │   ├── lib.rs
-│       │   └── test.rs
-│       └── Cargo.toml
-├── Cargo.toml
-└── README.md
-```
+## Why Stellar
+Stellar's 5-second finality and sub-cent transaction fees via Soroban make it financially viable to log high-volume, daily attendance data for hundreds of students without network bloat.
 
-- New Soroban contracts can be put in `contracts`, each in their own directory. There is already a `hello_world` contract in there to get you started.
-- If you initialized this project with any other example contracts via `--with-example`, those contracts will be in the `contracts` directory as well.
-- Contracts should have their own `Cargo.toml` files that rely on the top-level `Cargo.toml` workspace for their dependencies.
-- Frontend libraries can be added to the top-level directory as well. If you initialized this project with a frontend template via `--frontend-template` you will have those files already included.
+## Target User
+University students, teaching assistants managing large lectures, and independent tutors tracking session hours.
+
+## Live Demo
+- Network: Stellar Testnet
+
+- **Contract ID**: CBVUFVSCQK4E5THRXQEMRXV3NIZUPNPHJD7E5NFS23KF7IOEZIBGYOP3
+- **Transaction**: 62fa64934e4af1e6decf6a27652544d1087b48ecd09c2782d2952df53c24
+
+## How to Run
+1. Clone: git clone https://github.com/yourusername/presence-proof.git
+2. Build: cargo build --target wasm32-unknown-unknown --release
+3. Test: cargo test
+4. Deploy: stellar contract deploy --wasm target/wasm32-unknown-unknown/release/presence_proof.wasm --source-account student --network testnet
+
+## Tech Stack
+- Smart Contract: Rust / Soroban SDK v20.0.0
+- Wallet: Freighter
+- Network: Stellar Testnet
+
+## Team
+Nguyễn Hoàng Tiến | tienavk13@gmail.com | HCMUS Year 2
