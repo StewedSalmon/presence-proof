@@ -20,7 +20,7 @@ University students, teaching assistants managing large lectures, and independen
 
 ## How to Run
 1. Clone: git clone https://github.com/yourusername/presence-proof.git
-2. Build: cargo build --target wasm32-unknown-unknown --release
+2. Build: stellar contract build
 3. Test: cargo test
 4. Deploy: stellar contract deploy --wasm target/wasm32-unknown-unknown/release/presence_proof.wasm --source-account student --network testnet
 
@@ -29,5 +29,5 @@ University students, teaching assistants managing large lectures, and independen
 - Wallet: Freighter
 - Network: Stellar Testnet
 
-## Team
+## Author Profile
 Nguyễn Hoàng Tiến | tienavk13@gmail.com | HCMUS Year 2
