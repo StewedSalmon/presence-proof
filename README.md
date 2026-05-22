@@ -27,7 +27,8 @@ Ultra-Low Cost: Leverages Stellar's 5-second finality and sub-cent transaction f
 - **Contract ID**: CBVUFVSCQK4E5THRXQEMRXV3NIZUPNPHJD7E5NFS23KF7IOEZIBGYOP3
 - **Transaction**: 62fa64934e4af1e6decf6a27652544d1087b48ecd09c2782d2952df53c24
 ## Detailed Contract Details
-![screenshot] ()
+<img width="1061" height="881" alt="screenshot" src="https://github.com/user-attachments/assets/8d74b0fa-1a75-441c-a35f-131e09571243" />
+
 ## Future Scope
 Instructor Dashboard (React): A web application designed for classroom projectors that generates the rotating QR codes containing the day's specific session_id payload.
 Student Scanner App: A mobile-friendly interface allowing students to scan the projector's QR code, intercept the transaction envelope, and seamlessly sign the payload via their connected wallet.
